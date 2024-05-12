@@ -1,107 +1,21 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #007BFF; /* Vibrant blue background */
-    color: #333;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.dashboard-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    transition: opacity 1s ease-out;
-}
-
-#menu button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #0056b3; /* Darker blue for buttons */
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-#menu button:hover, #menu button:focus {
-    background-color: #003d7a; /* Even darker on hover for contrast */
-    transform: translateY(-2px);
-}
-
-.section {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: none;
-    width: 100%;
-    max-width: 600px; /* Increased max-width for better readability */
-}
-
-.section h2 {
-    color: #0056b3;
-    margin-bottom: 10px;
-}
-
-.section ul {
-    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #007BFF; /* Blue background */
 }
-
-.section li {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    padding: 8px;
-    border-radius: 4px;
-    margin-top: 5px;
-    transition: background-color 0.3s;
-}
-
-.section li:hover {
-    background-color: #e9ecef;
-}
-
-.search-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-    border: 2px solid #0056b3; /* Blue border for input */
-    border-radius: 5px;
-}
-
-.request {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc; /* Added styles for request blocks */
-    background-color: #eef; /* Light blue background for request blocks */
-    border-radius: 5px;
-}
-
-.request button {
-    padding: 5px 10px;
-    margin-top: 5px;
-    background-color: #4CAF50; /* Green for accept button */
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.request button:last-of-type {
-    background-color: #f44336; /* Red for reject button */
-}
-
-.request button:hover {
-    opacity: 0.8;
+.dashboard-container {
+    background-color: #ffffff; /* White background for the container */
+    color: #333333; /* Dark text for readability */
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 1; /* Start fully visible */
+    transition: opacity 1s ease-out; /* Smooth transition for fading out */
 }
