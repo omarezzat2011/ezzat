@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <!-- basic -->
@@ -526,14 +526,22 @@
           <input type="password" id="password" name="password" required>
       </div>
       <button type="button" onclick="login()">Login</button>
+      <hr>
+      <h2>Change Password</h2>
+      <div class="form-group">
+          <label for="newPassword">New Password:</label>
+          <input type="password" id="newPassword" name="newPassword" required minlength="8">
+      </div>
+      <button type="button" onclick="changePassword()">Update Password</button>
   </div>
   
   <script>
+      var adminUsername = 'admin'; // Set your admin username here
+      var adminPassword = 'yourpassword'; // Set your admin password here
+  
       function login() {
           var username = document.getElementById('username').value;
           var password = document.getElementById('password').value;
-          var adminUsername = 'admin'; // Set your admin username here
-          var adminPassword = 'yourpassword'; // Set your admin password here
   
           if (username === adminUsername && password === adminPassword) {
               window.location.href = 'admin_dashboard.html'; // Redirect to the admin dashboard page
@@ -541,8 +549,15 @@
               alert('Incorrect username or password');
           }
       }
+  
+      function changePassword() {
+          var newPassword = document.getElementById('newPassword').value;
+          if (newPassword.length >= 8) {
+              adminPassword = newPassword; // Update the admin password
+              alert('Password successfully updated!');
+          } else {
+              alert('Password must be at least 8 characters long.');
+          }
+      }
   </script>
   
-  
-</html>
-
