@@ -1,0 +1,58 @@
+/* Add this CSS to your existing styles.css file or create a new CSS file */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 28px; /* Larger font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Post styles */
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Post title styles */
+.post h4 {
+    font-size: 24px; /* Larger font size */
+    color: #333; /* Clearer title color */
+}
+
+/* Close button styles */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
